@@ -45,30 +45,14 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/slice-base-str2slice
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-var str2slice = require( '@stdlib/slice-base-str2slice' );
+import str2slice from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-base-str2slice@esm/index.mjs';
 ```
 
 <a name="main"></a>
@@ -111,7 +95,7 @@ var s = str2slice( 'Slice(foo,bar)' );
 -   The string serialization format must match that of a [`Slice`][@stdlib/slice/ctor] object.
 
     ```javascript
-    var Slice = require( '@stdlib/slice-ctor' );
+    import Slice from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-ctor@esm/index.mjs';
 
     var s = new Slice( 2, 10, 1 );
     // returns <Slice>
@@ -132,8 +116,13 @@ var s = str2slice( 'Slice(foo,bar)' );
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var str2slice = require( '@stdlib/slice-base-str2slice' );
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="module">
+
+import str2slice from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-base-str2slice@esm/index.mjs';
 
 var s = str2slice( 'Slice(null,null,null)' );
 console.log( 'start: %s. stop: %s. step: %s.', s.start, s.stop, s.step );
@@ -154,6 +143,10 @@ console.log( 'start: %s. stop: %s. step: %s.', s.start, s.stop, s.step );
 s = str2slice( 'Slice(foo,bar)' );
 console.log( s );
 // => null
+
+</script>
+</body>
+</html>
 ```
 
 </section>
@@ -185,7 +178,7 @@ console.log( s );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -245,7 +238,7 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/slice-base-str2slice/main/LICENSE
 
-[@stdlib/slice/ctor]: https://github.com/stdlib-js/slice-ctor
+[@stdlib/slice/ctor]: https://github.com/stdlib-js/slice-ctor/tree/esm
 
 </section>
 
