@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import str2slice from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-base-str2slice@deno/mod.js';
+import str2slice from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-base-str2slice@v0.2.0-deno/mod.js';
 ```
 
 <a name="main"></a>
@@ -117,7 +117,7 @@ var s = str2slice( 'Slice(foo,bar)' );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import str2slice from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-base-str2slice@deno/mod.js';
+import str2slice from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-base-str2slice@v0.2.0-deno/mod.js';
 
 var s = str2slice( 'Slice(null,null,null)' );
 console.log( 'start: %s. stop: %s. step: %s.', s.start, s.stop, s.step );
