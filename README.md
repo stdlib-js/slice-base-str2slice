@@ -174,6 +174,12 @@ console.log( s );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   <span class="package-name">[`@stdlib/slice-base/str2multislice`][@stdlib/slice/base/str2multislice]</span><span class="delimiter">: </span><span class="description">parse a string-serialized MultiSlice object.</span>
+
 </section>
 
 <!-- /.related -->
@@ -251,6 +257,12 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/slice-base-str2slice/main/LICENSE
 
 [@stdlib/slice/ctor]: https://github.com/stdlib-js/slice-ctor
+
+<!-- <related-links> -->
+
+[@stdlib/slice/base/str2multislice]: https://github.com/stdlib-js/slice-base-str2multislice
+
+<!-- </related-links> -->
 
 </section>
 
